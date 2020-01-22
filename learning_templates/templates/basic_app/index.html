@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{ % load my_extras % }
+{% extends "basic_app/base.html" %}
+    {% block body_block%}
+
+    <h1>Hello and welcome to the site!</h1>
+    <h1> {{ text|cut:',I am AK' }} </h1>
+    <h1> {{ number|add:'0' }} </h1>
+
+    {% endblock %}
